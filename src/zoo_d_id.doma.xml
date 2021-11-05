@@ -3,12 +3,12 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DD01V>
-    <DOMNAME>ZOO_ACCOUNTID</DOMNAME>
+    <DOMNAME>ZOO_D_ID</DOMNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
     <DATATYPE>INT4</DATATYPE>
     <LENG>000010</LENG>
     <OUTPUTLEN>000011</OUTPUTLEN>
-    <DDTEXT>ID of OpenFriends account</DDTEXT>
+    <DDTEXT>ID of OpenFriends entity</DDTEXT>
     <DOMMASTER>E</DOMMASTER>
    </DD01V>
   </asx:values>
