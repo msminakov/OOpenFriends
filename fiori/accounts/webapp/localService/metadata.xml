@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri="http://vhcalnplci:8000/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZOO_DD_ACCOUNTS_CDS" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="ZOO_DD_ACCOUNTSType" sap:label="CDS View for accounts" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Accountid"/>
+                </Key>
+                <Property Name="Accountid" Type="Edm.Int32" Nullable="false" sap:label="Account ID" sap:quickinfo="Account ID of OpenFirends"/>
+                <Property Name="Nickname" Type="Edm.String" MaxLength="30" sap:label="Nickname" sap:quickinfo="Nickname of account of OpenFriends"/>
+                <Property Name="Firstname" Type="Edm.String" MaxLength="30" sap:label="First Name" sap:quickinfo="First name of OpenFriends"/>
+                <Property Name="Lastname" Type="Edm.String" MaxLength="30" sap:label="Last Name" sap:quickinfo="Lastname of OpenFriends"/>
+            </EntityType>
+            <EntityContainer Name="ZOO_DD_ACCOUNTS_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ZOO_DD_ACCOUNTS" EntityType="ZOO_DD_ACCOUNTS_CDS.ZOO_DD_ACCOUNTSType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://vhcalnplci:8000/sap/opu/odata/sap/ZOO_DD_ACCOUNTS_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://vhcalnplci:8000/sap/opu/odata/sap/ZOO_DD_ACCOUNTS_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
