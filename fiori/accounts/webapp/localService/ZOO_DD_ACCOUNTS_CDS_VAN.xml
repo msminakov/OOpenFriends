@@ -13,6 +13,6 @@
         <edmx:Include Namespace="ZOO_DD_ACCOUNTS_CDS" Alias="SAP"/>
     </edmx:Reference>
     <edmx:DataServices>
-        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+        <Schema Namespace="edm" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
     </edmx:DataServices>
 </edmx:Edmx>

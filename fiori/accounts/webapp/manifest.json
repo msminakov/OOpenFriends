@@ -15,7 +15,7 @@
         "resources": "resources.json",
         "dataSources": {
             "mainService": {
-                "uri": "/sap/opu/odata/sap/ZOO_DD_ACCOUNTS_CDS/?sap-ds-debug=true",
+                "uri": "/sap/opu/odata/sap/ZOO_DD_ACCOUNTS_CDS/",
                 "type": "OData",
                 "settings": {
                     "annotations": [
